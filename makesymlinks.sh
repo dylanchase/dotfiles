@@ -9,7 +9,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files="bashrc irssi tmux vimrc vim"    # list of files/folders to symlink in homedir
+files="bashrc irssi tmux.conf vimrc vim"    # list of files/folders to symlink in homedir
 
 ##########
 

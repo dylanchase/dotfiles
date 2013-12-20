@@ -17,8 +17,8 @@ command! OrgCaptureFile :call org#OpenCaptureFile()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""""""" vim-wiki """""""""""""""""""""""""""""""""""
 set nocompatible
-let g:vimwiki_list = [{'path': '~/dropbox/Dropbox/wiki/vimwiki/',
-                      \ 'template_path': '~/dropbox/Dropbox/wiki/templates/',
+let g:vimwiki_list = [{'path': '~/Dropbox/wiki/vimwiki/',
+                      \ 'template_path': '~/Dropbox/wiki/templates/',
                       \ 'template_default': 'def_template',
                       \ 'template_ext': '.html',
                       \ 'auto_export': 1}]

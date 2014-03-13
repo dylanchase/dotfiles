@@ -14,4 +14,3 @@ PS1="\[\033[1;36m\]\w\n\[\033[1;36m\]\u@\H\[\033[1;33m\] $ \[\033[0m\]"
 # make up work better
 bind '"\e[A": history-search-backward'
 bind '"\e[B": history-search-forward'
-

@@ -14,3 +14,7 @@ PS1="\[\033[1;36m\]\w\n\[\033[1;36m\]\u@\H\[\033[1;33m\] $ \[\033[0m\]"
 # make up work better
 bind '"\e[A": history-search-backward'
 bind '"\e[B": history-search-forward'
+
+# fix ls colors
+LS_COLORS='di=0;96'; export LS_COLORS
+

@@ -16,5 +16,5 @@ bind '"\e[A": history-search-backward'
 bind '"\e[B": history-search-forward'
 
 # fix ls colors
-LS_COLORS='di=0;96'; export LS_COLORS
+LS_COLORS='di=0;95'; export LS_COLORS
 

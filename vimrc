@@ -30,9 +30,9 @@ autocmd! bufwritepost .vimrc source %
 set clipboard=unnamedplus
 
 " turn off menu, toolbar and scrollbar
-set guioptions-=m   "menu bar
-set guioptions-=T   "toolbar
-set guioptions-=r   "right hand scroll bar
+" set guioptions-=m   "menu bar
+" set guioptions-=T   "toolbar
+" set guioptions-=r   "right hand scroll bar
 
 " backspace in normal node too
 set bs=2
@@ -110,6 +110,9 @@ inoremap jk <esc>
 nnoremap ; :
 
 nnoremap <leader>md :!chromium-browser % <return>
+
+" line break in normal mode
+nnoremap K i<enter><esc>
 
 """"""""""""""""""""""""""""""""""" Vim-tex """""""""""""""""""""""""""""""""""
 " This makes vim invoke Latex-Suite when you open a tex file.

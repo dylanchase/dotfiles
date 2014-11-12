@@ -157,7 +157,15 @@ bindsym $mod+y move container to output left
 bindsym $mod+o move scratchpad
 bindsym $mod+i scratchpad show
 
-# External tools
-exec --no-startup-id dropboxd
-exec --no-startup-id xfce4-volumed
-exec --no-startup-id dropbox start -i
+# Autostart
+exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/firefox'
+exec --no-startup-id i3-msg 'workspace 2; exec thunar'
+exec --no-startup-id i3-msg 'workspace 6; exec google-chrome'
+
+
+
+# Damons
+exec --no-startup-id i3-msg 'exec ~/.dropbox-dist/dropboxd'
+exec --no-startup-id i3-msg 'exec nm-applet'
+exec --no-startup-id i3-msg 'exec pidgin'
+

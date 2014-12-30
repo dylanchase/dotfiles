@@ -57,9 +57,6 @@ bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout default
 
-# toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
-
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
 
@@ -67,7 +64,7 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 
 # focus the child container
-#bindcode $mod+d focus child
+bindsym $mod+z focus child
 
 # switch to workspace
 bindsym $mod+1 workspace 1
@@ -156,16 +153,11 @@ bindsym $mod+y move container to output left
 # Scratch pad
 bindsym $mod+o move scratchpad
 bindsym $mod+i scratchpad show
+bindsym $mod+p floating toggle
 
-# Autostart
-exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/firefox'
-exec --no-startup-id i3-msg 'workspace 2; exec thunar'
-exec --no-startup-id i3-msg 'workspace 6; exec google-chrome'
-
-
-
-# Damons
+# Deamons
 exec --no-startup-id i3-msg 'exec ~/.dropbox-dist/dropboxd'
 exec --no-startup-id i3-msg 'exec nm-applet'
-exec --no-startup-id i3-msg 'exec pidgin'
 
+# Key Bindings (see .xbindkeyscr)
+exec --no-startup-id i3-msg 'exec xbindkeys'

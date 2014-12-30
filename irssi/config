@@ -109,7 +109,6 @@ chatnets = {
   Freenode = {
     type = "IRC";
     nick = "dylanchase";
-    autosendcmd = "/msg nickserv identify betajuice ;wait 2000";
   };
   "thelinuxlink.net" = { type = "IRC"; };
 };

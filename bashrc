@@ -9,7 +9,8 @@ genpasswd() {
 
 alias tmux="tmux -2"
 alias nomatlab="matlab -nodesktop -nosplash"
-PS1="\[\033[1;36m\]\w\n\[\033[1;36m\]\u@\H\[\033[1;33m\] $ \[\033[0m\]"
+PS1="\[\033[1;36m\]\w \[\033[1;36m\]\u@\H\[\033[1;33m\]\n$ \[\033[0m\]"
+PS1="\[\033[1;36m\]\u@\H\[\033[1;33m\]: \[\033[1;36m\]\w\n\[\033[1;33m\]$ \[\033[0m\]"
 
 # make up work better
 bind '"\e[A": history-search-backward'

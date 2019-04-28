@@ -9,12 +9,14 @@ genpasswd() {
 
 alias tmux="tmux -2"
 alias nomatlab="matlab -nodesktop -nosplash"
-PS1="\[\033[1;36m\]\w \[\033[1;36m\]\u@\H\[\033[1;33m\]\n$ \[\033[0m\]"
-PS1="\[\033[1;36m\]\u@\H\[\033[1;33m\]: \[\033[1;36m\]\w\n\[\033[1;33m\]$ \[\033[0m\]"
+alias python=python3
+#PS1="\[\033[1;36m\]\w \[\033[1;36m\]\u@\H\[\033[1;33m\]\n$ \[\033[0m\]"
+PS1="\[\033[1;33m\]\u\[\033[1;33m\]@\H\[\033[1;36m\]\w\[\033[1;33m\]\n $ \[\033[0m\]"
 
-# make up work better
+# make up-arrow work better
+set -o vi
 bind '"\e[A": history-search-backward'
-bind '"\e[B": history-search-forward'
+bind '"\e|B": history-search-forward'
 
 # fix ls colors
 LS_COLORS='di=0;95'; export LS_COLORS
@@ -28,3 +30,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
+
+# added by Anaconda3 installer
+. /home/dylan/anaconda3/etc/profile.d/conda.sh

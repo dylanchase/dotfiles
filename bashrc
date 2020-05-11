@@ -1,5 +1,6 @@
-alias matlab=/usr/local/MATLAB/R2011a/bin/matlab
 alias ls='ls --color -h --group-directories-first'
+export EDITOR='vim'
+export VISUAL='vim'
 
 genpasswd() {
 	local l=$1
@@ -8,7 +9,6 @@ genpasswd() {
 }
 
 alias tmux="tmux -2"
-alias nomatlab="matlab -nodesktop -nosplash"
 alias python=python3
 #PS1="\[\033[1;36m\]\w \[\033[1;36m\]\u@\H\[\033[1;33m\]\n$ \[\033[0m\]"
 PS1="\[\033[1;33m\]\u\[\033[1;33m\]@\H\[\033[1;36m\]\w\[\033[1;33m\]\n $ \[\033[0m\]"
@@ -29,7 +29,3 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-
-# added by Anaconda3 installer
-. /home/dylan/anaconda3/etc/profile.d/conda.sh

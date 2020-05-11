@@ -6,4 +6,7 @@ dotfiles.
 
     git clone https:https://github.com/dylanchase/dotfiles
     
+Create symlinks to the dotfiles and copy the old dotfiles into /dotfiles/old
+
     ./dotfiles/makesymlinks.sh
+    

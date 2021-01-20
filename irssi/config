@@ -39,6 +39,14 @@ servers = (
     use_ssl = "no";
     ssl_verify = "no";
     autoconnect = "yes";
+  },
+  {
+    address = "chat.freenode.net";
+    chatnet = "Freenode";
+    port = "6697";
+    use_tls = "yes";
+    tls_verify = "yes";
+    autoconnect = "yes";
   }
 );
 
@@ -109,6 +117,9 @@ chatnets = {
   Freenode = {
     type = "IRC";
     nick = "dylanchase";
+    sasl_mechanism = "PLAIN";
+    sasl_username = "dylanchase";
+    sasl_password = "betajuice";
   };
   "thelinuxlink.net" = { type = "IRC"; };
 };
@@ -117,7 +128,10 @@ channels = (
   { name = "#irssi"; chatnet = "ircnet"; autojoin = "No"; },
   { name = "silc"; chatnet = "silc"; autojoin = "No"; },
   { name = "#matlab"; chatnet = "Freenode"; autojoin = "no"; },
-  { name = "#techshow"; chatnet = "thelinuxlink.net"; autojoin = "no";
+  { 
+    name = "#techshow";
+    chatnet = "thelinuxlink.net";
+    autojoin = "no";
   }
 );
 

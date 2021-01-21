@@ -10,3 +10,4 @@ Create symlinks to the dotfiles and copy the old dotfiles into /dotfiles/old
 
     ./dotfiles/makesymlinks.sh
     
+test edit

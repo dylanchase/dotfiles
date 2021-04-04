@@ -6,7 +6,7 @@ Plug 'morhetz/gruvbox'
 Plug 'jnurmine/Zenburn'
 Plug 'altercation/vim-colors-solarized'
 Plug 'kien/ctrlp.vim'
-Plug 'scrooloose/syntastic'
+Plug 'dense-analysis/ale'
 Plug 'majutsushi/tagbar'
 Plug 'lepture/vim-jinja'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -15,6 +15,7 @@ Plug 'dyng/ctrlsf.vim'
 Plug 'mattn/emmet-vim'
 Plug 'lepture/vim-jinja'
 call plug#end()
+
 
 """
 " Basic Config
@@ -154,14 +155,24 @@ nnoremap <leader>d :YcmCompleter GetDoc<CR>
 nnoremap <leader>r :YcmCompleter GoToReferences<CR>
 
 """
+" ALE
+"""
+let g:ale_lint_on_enter = 0
+let g:ale_lint_on_save = 1
+let g:ale_sign_error = '>'
+let g:ale_sign_warning = '.'
+let g:ale_linters = { 'python': ['flake8'] , }
+
+
+"""
 " Syntastic
 """
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:Syntastic_python_checkers = ['pylint', 'flake8']
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
+" 
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
+" let g:Syntastic_python_checkers = ['pylint', 'flake8']

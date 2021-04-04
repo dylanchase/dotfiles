@@ -24,7 +24,7 @@ bind '"\e[A": history-search-backward'
 bind '"\e|B": history-search-forward'
 
 # fix ls colors
-LS_COLORS='di=0;95'; export LS_COLORS
+LS_COLORS="di=1;93:fi=0;92:ex=0;91"; export LS_COLORS
 
 # enable bash completion in interactive shells
 if ! shopt -oq posix; then
